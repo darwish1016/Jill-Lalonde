@@ -87,12 +87,13 @@
 .pg-hero{
     position:relative;
     display:flex;
-    align-items:flex-end;
+    /* content sits in the middle of the photo area below the fixed header */
+    align-items:center;
     /* fill the whole screen (svh: ignores mobile browser bars) */
     min-height:100vh;
     min-height:100svh;
-    /* keep the headline clear of the fixed header on short screens */
-    padding-top:calc(136px + clamp(16px,4vh,48px));
+    /* equal space above and below once the header height is set aside */
+    padding:calc(136px + clamp(16px,4vh,48px)) 0 clamp(16px,4vh,48px);
     overflow:hidden;
     background:var(--rev-navy-deep);
     color:#FFF9F2;
@@ -108,9 +109,10 @@
 .pg-hero-shade{
     position:absolute;
     inset:0;
+    /* darkest behind the text on the left, lighter toward the right */
     background:
-        linear-gradient(180deg,rgba(16,35,53,0) 30%,rgba(16,35,53,.55) 62%,rgba(16,35,53,.92) 100%),
-        linear-gradient(90deg,rgba(16,35,53,.55) 0%,rgba(16,35,53,0) 60%);
+        linear-gradient(90deg,rgba(16,35,53,.86) 0%,rgba(16,35,53,.62) 42%,rgba(16,35,53,.18) 78%,rgba(16,35,53,.08) 100%),
+        linear-gradient(180deg,rgba(16,35,53,.12) 0%,rgba(16,35,53,.32) 100%);
 }
 .pg-hero-content{
     position:relative;
@@ -118,8 +120,7 @@
     width:100%;
     max-width:1440px;
     margin:0 auto;
-    /* bottom space shrinks on short screens so the buttons stay in view */
-    padding:0 clamp(20px,4.2vw,76px) clamp(32px,min(7vw,8vh),104px);
+    padding:0 clamp(20px,4.2vw,76px);
 }
 .pg-hero h1{
     max-width:17ch;
@@ -175,11 +176,11 @@
 }
 .pg-hero-link:hover{ border-color:var(--rev-brass); }
 @media (max-width:767px){
-    .pg-hero{ padding-top:calc(76px + clamp(16px,4vh,40px)); }
+    .pg-hero{ padding-top:calc(76px + clamp(16px,4vh,40px)); padding-bottom:clamp(16px,4vh,40px); }
     .pg-hero h1{ font-size:clamp(30px,min(11vw,5.6vh),42px) !important; }
     .pg-hero-lede{ font-size:15.5px; }
     .pg-hero-shade{
-        background:linear-gradient(180deg,rgba(16,35,53,.05) 18%,rgba(16,35,53,.6) 50%,rgba(16,35,53,.95) 100%);
+        background:linear-gradient(180deg,rgba(16,35,53,.5) 0%,rgba(16,35,53,.72) 50%,rgba(16,35,53,.6) 100%);
     }
     .pg-hero-actions{ gap:18px 24px; }
 }
