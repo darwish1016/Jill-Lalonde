@@ -11,8 +11,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Fraunces:opsz,wght@9..144,600&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="preconnect" href="https://api.fontshare.com">
 <link href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/main.css?v=20261014d">
-<link rel="stylesheet" href="css/pages.css?v=20261014d">
+<link rel="stylesheet" href="css/main.css?v=20261016b">
+<link rel="stylesheet" href="css/pages.css?v=20261016b">
 </head>
 <body class="pg-page">
 <div class="page">
@@ -71,23 +71,37 @@
     </div>
 </section>
 
-<div id="services">
+<!-- =========================================================
+     THE FIVE AREAS — a pinned area menu, then one "chapter" per area
+     ========================================================= -->
+<div id="services" class="pg-chapters">
+    <nav class="pg-chnav" aria-label="The five areas" data-chnav>
+        <div class="pg-chnav-inner">
+            <a href="#area-1" class="pg-chnav-link"><span>01</span>Executive Advisory</a>
+            <a href="#area-2" class="pg-chnav-link"><span>02</span>Fractional Leadership</a>
+            <a href="#area-3" class="pg-chnav-link"><span>03</span>Strategic Planning</a>
+            <a href="#area-4" class="pg-chnav-link"><span>04</span>Nonprofit Mergers</a>
+            <a href="#area-5" class="pg-chnav-link"><span>05</span>Workshops</a>
+        </div>
+    </nav>
 <!-- AREA 01 — Executive Advisory -->
-<section class="pg-area pg-area--light" id="area-1" data-first="true" aria-labelledby="area-title-1">
-    <div class="pg-area-inner">
-        <figure class="pg-area-media" data-reveal>
-            <div class="pg-area-frame">
-                <img src="https://images.unsplash.com/photo-1653762374114-9ab5d7a7360a?auto=format&fit=crop&w=1400&q=80" alt="A woman in conversation with another woman at a table" loading="lazy">
+<section class="pg-ch pg-ch--light" id="area-1" aria-labelledby="area-title-1" data-chapter>
+    <div class="pg-ch-inner">
+        <header class="pg-ch-open" data-reveal>
+            <img src="https://images.unsplash.com/photo-1653762374114-9ab5d7a7360a?auto=format&fit=crop&w=2000&q=80" alt="A woman in conversation with another woman at a table" loading="lazy">
+            <div class="pg-ch-title">
+                <span class="pg-ch-num">01</span>
+                <h2 id="area-title-1">Executive Advisory</h2>
+                <p class="pg-ch-tagline">A trusted partner for the decisions you cannot make in isolation.</p>
             </div>
-        </figure>
-        <div class="pg-area-content" data-reveal>
-            <span class="pg-area-num">01</span>
-            <h2 id="area-title-1">Executive Advisory</h2>
-            <p class="pg-area-tagline">A trusted partner for the decisions you cannot make in isolation.</p>
-            <p class="pg-area-body">Executive leadership can be lonely, particularly when an organization is growing, changing, or facing decisions with no obvious answer. I provide an experienced, outside perspective while staying close enough to understand the organization and its context.</p>
-            <div class="pg-area-includes">
-                <p class="pg-area-label">This may include</p>
-                <ul class="pg-area-list">
+        </header>
+        <div class="pg-ch-body">
+            <div class="pg-ch-text">
+                <p class="pg-ch-intro">Executive leadership can be lonely, particularly when an organization is growing, changing, or facing decisions with no obvious answer. I provide an experienced, outside perspective while staying close enough to understand the organization and its context.</p>
+            </div>
+            <div class="pg-ch-includes">
+                <p class="pg-ch-label">This may include</p>
+                <ul class="pg-ch-list">
                     <li>Working through complex organizational decisions</li>
                     <li>Clarifying priorities and tradeoffs</li>
                     <li>Preparing for difficult board or team conversations</li>
@@ -96,29 +110,32 @@
                     <li>Holding momentum on critical priorities</li>
                 </ul>
             </div>
-            <div class="pg-area-foot">
-                <p><strong>Best suited for</strong>CEOs and executive directors who want an ongoing strategic thought partner.</p>
-                <a href="contact.html" class="pg-area-link">Talk about this <span aria-hidden="true">→</span></a>
-            </div>
+            <aside class="pg-ch-best">
+                <p class="pg-ch-label">Best suited for</p>
+                <p class="pg-ch-best-text">CEOs and executive directors who want an ongoing strategic thought partner.</p>
+                <a href="contact.html" class="pg-ch-btn">Talk about this <span aria-hidden="true">→</span></a>
+            </aside>
         </div>
     </div>
 </section>
 <!-- AREA 02 — Fractional Leadership -->
-<section class="pg-area pg-area--sand pg-area--flip" id="area-2" aria-labelledby="area-title-2">
-    <div class="pg-area-inner">
-        <figure class="pg-area-media" data-reveal>
-            <div class="pg-area-frame">
-                <img src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&w=1400&q=80" alt="A team listening to a colleague lead a discussion" loading="lazy">
+<section class="pg-ch pg-ch--sand" id="area-2" aria-labelledby="area-title-2" data-chapter>
+    <div class="pg-ch-inner">
+        <header class="pg-ch-open" data-reveal>
+            <img src="https://images.unsplash.com/photo-1622675363311-3e1904dc1885?auto=format&fit=crop&w=2000&q=80" alt="A team listening to a colleague lead a discussion" loading="lazy">
+            <div class="pg-ch-title">
+                <span class="pg-ch-num">02</span>
+                <h2 id="area-title-2">Fractional Leadership</h2>
+                <p class="pg-ch-tagline">Experienced executive capacity without adding a full-time position.</p>
             </div>
-        </figure>
-        <div class="pg-area-content" data-reveal>
-            <span class="pg-area-num">02</span>
-            <h2 id="area-title-2">Fractional Leadership</h2>
-            <p class="pg-area-tagline">Experienced executive capacity without adding a full-time position.</p>
-            <p class="pg-area-body">I step into the organization as an embedded senior leader to help clarify direction, strengthen organizational infrastructure, develop internal capacity, and move priority initiatives forward.</p>
-            <div class="pg-area-includes">
-                <p class="pg-area-label">This may include</p>
-                <ul class="pg-area-list">
+        </header>
+        <div class="pg-ch-body">
+            <div class="pg-ch-text">
+                <p class="pg-ch-intro">I step into the organization as an embedded senior leader to help clarify direction, strengthen organizational infrastructure, develop internal capacity, and move priority initiatives forward.</p>
+            </div>
+            <div class="pg-ch-includes">
+                <p class="pg-ch-label">This may include</p>
+                <ul class="pg-ch-list">
                     <li>Translating strategy into an operating plan</li>
                     <li>Strengthening leadership and organizational accountability</li>
                     <li>Clarifying roles, responsibilities, and decision-making</li>
@@ -126,29 +143,32 @@
                     <li>Leading high-priority initiatives that cross organizational boundaries</li>
                 </ul>
             </div>
-            <div class="pg-area-foot">
-                <p><strong>Best suited for</strong>Organizations experiencing growth, transition, or executive capacity constraints.</p>
-                <a href="contact.html" class="pg-area-link">Talk about this <span aria-hidden="true">→</span></a>
-            </div>
+            <aside class="pg-ch-best">
+                <p class="pg-ch-label">Best suited for</p>
+                <p class="pg-ch-best-text">Organizations experiencing growth, transition, or executive capacity constraints.</p>
+                <a href="contact.html" class="pg-ch-btn">Talk about this <span aria-hidden="true">→</span></a>
+            </aside>
         </div>
     </div>
 </section>
 <!-- AREA 03 — Strategic and Operational Planning -->
-<section class="pg-area pg-area--light" id="area-3" aria-labelledby="area-title-3">
-    <div class="pg-area-inner">
-        <figure class="pg-area-media" data-reveal>
-            <div class="pg-area-frame">
-                <img src="https://images.unsplash.com/photo-1503551723145-6c040742065b-v2?auto=format&fit=crop&w=1400&q=80" alt="Colorful sticky notes on a planning board" loading="lazy">
+<section class="pg-ch pg-ch--light" id="area-3" aria-labelledby="area-title-3" data-chapter>
+    <div class="pg-ch-inner">
+        <header class="pg-ch-open" data-reveal>
+            <img src="https://images.unsplash.com/photo-1503551723145-6c040742065b-v2?auto=format&fit=crop&w=2000&q=80" alt="Colorful sticky notes on a planning board" loading="lazy">
+            <div class="pg-ch-title">
+                <span class="pg-ch-num">03</span>
+                <h2 id="area-title-3">Strategic and Operational Planning</h2>
+                <p class="pg-ch-tagline">A clear direction and a practical plan to move it forward.</p>
             </div>
-        </figure>
-        <div class="pg-area-content" data-reveal>
-            <span class="pg-area-num">03</span>
-            <h2 id="area-title-3">Strategic and Operational Planning</h2>
-            <p class="pg-area-tagline">A clear direction and a practical plan to move it forward.</p>
-            <p class="pg-area-body">I guide organizations through strategic planning processes that clarify where they are, where they want to go, and the choices required to get there, then help translate that direction into priorities, responsibilities, and operational plans that support meaningful execution.</p>
-            <div class="pg-area-includes">
-                <p class="pg-area-label">This may include</p>
-                <ul class="pg-area-list">
+        </header>
+        <div class="pg-ch-body">
+            <div class="pg-ch-text">
+                <p class="pg-ch-intro">I guide organizations through strategic planning processes that clarify where they are, where they want to go, and the choices required to get there, then help translate that direction into priorities, responsibilities, and operational plans that support meaningful execution.</p>
+            </div>
+            <div class="pg-ch-includes">
+                <p class="pg-ch-label">This may include</p>
+                <ul class="pg-ch-list">
                     <li>Comprehensive strategic planning</li>
                     <li>Strategy refreshes and organizational assessments</li>
                     <li>Stakeholder engagement and facilitated planning sessions</li>
@@ -156,35 +176,38 @@
                     <li>Annual and multi-year operational planning</li>
                 </ul>
             </div>
-            <div class="pg-area-foot">
-                <p><strong>Best suited for</strong>Organizations developing a new strategy, responding to significant change, or seeking a clearer connection between long-term direction and day-to-day work.</p>
-                <a href="contact.html" class="pg-area-link">Talk about this <span aria-hidden="true">→</span></a>
-            </div>
+            <aside class="pg-ch-best">
+                <p class="pg-ch-label">Best suited for</p>
+                <p class="pg-ch-best-text">Organizations developing a new strategy, responding to significant change, or seeking a clearer connection between long-term direction and day-to-day work.</p>
+                <a href="contact.html" class="pg-ch-btn">Talk about this <span aria-hidden="true">→</span></a>
+            </aside>
         </div>
     </div>
 </section>
 <!-- AREA 04 — Nonprofit Mergers and Strategic Partnerships -->
-<section class="pg-area pg-area--navy pg-area--flip" id="area-4" aria-labelledby="area-title-4">
-    <div class="pg-area-inner">
-        <figure class="pg-area-media" data-reveal>
-            <div class="pg-area-frame">
-                <img src="https://images.unsplash.com/photo-1758520144427-ddb02ac74e9d?auto=format&fit=crop&w=1400&q=80" alt="Two women shaking hands across a desk" loading="lazy">
+<section class="pg-ch pg-ch--sand" id="area-4" aria-labelledby="area-title-4" data-chapter>
+    <div class="pg-ch-inner">
+        <header class="pg-ch-open" data-reveal>
+            <img src="https://images.unsplash.com/photo-1758520144427-ddb02ac74e9d?auto=format&fit=crop&w=2000&q=80" alt="Two women shaking hands across a desk" loading="lazy">
+            <div class="pg-ch-title">
+                <span class="pg-ch-num">04</span>
+                <h2 id="area-title-4">Nonprofit Mergers and Strategic Partnerships</h2>
+                <p class="pg-ch-tagline">Thoughtful guidance when preserving the mission may mean reimagining the organization.</p>
             </div>
-        </figure>
-        <div class="pg-area-content" data-reveal>
-            <span class="pg-area-num">04</span>
-            <h2 id="area-title-4">Nonprofit Mergers and Strategic Partnerships</h2>
-            <p class="pg-area-tagline">Thoughtful guidance when preserving the mission may mean reimagining the organization.</p>
-            <p class="pg-area-body">Exploring a merger, strategic partnership, or dissolution requires more than legal and financial analysis. These decisions also involve mission, people, power, governance, culture, funding, and organizational identity.</p>
-            <div class="pg-more">
+        </header>
+        <div class="pg-ch-body">
+            <div class="pg-ch-text">
+                <p class="pg-ch-intro">Exploring a merger, strategic partnership, or dissolution requires more than legal and financial analysis. These decisions also involve mission, people, power, governance, culture, funding, and organizational identity.</p>
+                <div class="pg-more">
                 <div class="pg-more-body" id="more-3"><div class="pg-more-inner">
-                    <p class="pg-area-body">I help leaders and boards explore their options, identify and assess potential partners, and determine the path that will best protect the mission and the communities they serve. When a direction is chosen, I provide grounded support to move the organization through it with clarity, care, and integrity.</p>
+                    <p class="pg-ch-intro">I help leaders and boards explore their options, identify and assess potential partners, and determine the path that will best protect the mission and the communities they serve. When a direction is chosen, I provide grounded support to move the organization through it with clarity, care, and integrity.</p>
                 </div></div>
                 <button type="button" class="pg-more-toggle" aria-expanded="true" aria-controls="more-3" data-less="Show less" hidden><span class="pg-more-label">Read more</span><span class="pg-more-mark" aria-hidden="true">↓</span></button>
             </div>
-            <div class="pg-area-includes">
-                <p class="pg-area-label">This may include</p>
-                <ul class="pg-area-list">
+            </div>
+            <div class="pg-ch-includes">
+                <p class="pg-ch-label">This may include</p>
+                <ul class="pg-ch-list">
                     <li>Organizational readiness and options assessment</li>
                     <li>Partner exploration and identification</li>
                     <li>Merger and partnership discernment</li>
@@ -193,29 +216,32 @@
                     <li>Responsible dissolution and wind-down</li>
                 </ul>
             </div>
-            <div class="pg-area-foot">
-                <p><strong>Best suited for</strong>Organizations considering whether a merger, partnership, or responsible dissolution could strengthen or preserve their mission.</p>
-                <a href="contact.html" class="pg-area-link">Talk about this <span aria-hidden="true">→</span></a>
-            </div>
+            <aside class="pg-ch-best">
+                <p class="pg-ch-label">Best suited for</p>
+                <p class="pg-ch-best-text">Organizations considering whether a merger, partnership, or responsible dissolution could strengthen or preserve their mission.</p>
+                <a href="contact.html" class="pg-ch-btn">Talk about this <span aria-hidden="true">→</span></a>
+            </aside>
         </div>
     </div>
 </section>
 <!-- AREA 05 — Workshops and Retreats -->
-<section class="pg-area pg-area--sand" id="area-5" aria-labelledby="area-title-5">
-    <div class="pg-area-inner">
-        <figure class="pg-area-media" data-reveal>
-            <div class="pg-area-frame">
-                <img src="https://images.unsplash.com/photo-1623303647440-967d26b95b47?auto=format&fit=crop&w=1400&q=80" alt="A group working around a table with papers" loading="lazy">
+<section class="pg-ch pg-ch--light" id="area-5" aria-labelledby="area-title-5" data-chapter>
+    <div class="pg-ch-inner">
+        <header class="pg-ch-open" data-reveal>
+            <img src="https://images.unsplash.com/photo-1623303647440-967d26b95b47?auto=format&fit=crop&w=2000&q=80" alt="A group working around a table with papers" loading="lazy">
+            <div class="pg-ch-title">
+                <span class="pg-ch-num">05</span>
+                <h2 id="area-title-5">Workshops and Retreats</h2>
+                <p class="pg-ch-tagline">The conversations that matter, designed to lead somewhere.</p>
             </div>
-        </figure>
-        <div class="pg-area-content" data-reveal>
-            <span class="pg-area-num">05</span>
-            <h2 id="area-title-5">Workshops and Retreats</h2>
-            <p class="pg-area-tagline">The conversations that matter, designed to lead somewhere.</p>
-            <p class="pg-area-body">I facilitate focused experiences that allow teams and boards to step away from day-to-day demands, engage honestly, and build shared direction.</p>
-            <div class="pg-area-includes">
-                <p class="pg-area-label">Sessions may focus on</p>
-                <ul class="pg-area-list">
+        </header>
+        <div class="pg-ch-body">
+            <div class="pg-ch-text">
+                <p class="pg-ch-intro">I facilitate focused experiences that allow teams and boards to step away from day-to-day demands, engage honestly, and build shared direction.</p>
+            </div>
+            <div class="pg-ch-includes">
+                <p class="pg-ch-label">Sessions may focus on</p>
+                <ul class="pg-ch-list">
                     <li>Strategic priorities</li>
                     <li>Board and staff alignment</li>
                     <li>Organizational roles and decision-making</li>
@@ -226,10 +252,11 @@
                     <li>Navigating a significant transition</li>
                 </ul>
             </div>
-            <div class="pg-area-foot">
-                <p><strong>Every engagement</strong>Each engagement includes thoughtful preparation, facilitation, and clear synthesis of decisions and next steps.</p>
-                <a href="contact.html" class="pg-area-link">Talk about this <span aria-hidden="true">→</span></a>
-            </div>
+            <aside class="pg-ch-best">
+                <p class="pg-ch-label">Every engagement</p>
+                <p class="pg-ch-best-text">Each engagement includes thoughtful preparation, facilitation, and clear synthesis of decisions and next steps.</p>
+                <a href="contact.html" class="pg-ch-btn">Talk about this <span aria-hidden="true">→</span></a>
+            </aside>
         </div>
     </div>
 </section>
@@ -320,6 +347,6 @@
 
 </div>
 
-<script src="js/site.js?v=20261014d"></script>
+<script src="js/site.js?v=20261016b"></script>
 </body>
 </html>

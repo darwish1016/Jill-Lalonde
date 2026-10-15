@@ -16,6 +16,51 @@
 })();
 
 
+/* ---------- Work With Me: pinned area menu ----------
+   Keeps the menu just under the fixed header (whose height changes with
+   screen size and scroll) and marks the area currently in view. */
+(function(){
+    const nav = document.querySelector("[data-chnav]");
+    if(!nav) return;
+    const header = document.getElementById("siteHeader");
+    const links = Array.from(nav.querySelectorAll(".pg-chnav-link"));
+    const chapters = Array.from(document.querySelectorAll("[data-chapter]"));
+    let current = -1;
+
+    function setHeaderOffset(){
+        if(header) document.documentElement.style.setProperty("--hdr", header.offsetHeight + "px");
+    }
+
+    function markCurrent(){
+        const line = (header ? header.offsetHeight : 0) + nav.offsetHeight + 40;
+        let index = -1;
+        chapters.forEach(function(chapter, i){
+            if(chapter.getBoundingClientRect().top <= line) index = i;
+        });
+        if(index === current) return;
+        current = index;
+        links.forEach(function(link, i){
+            const active = i === index;
+            link.classList.toggle("is-active", active);
+            if(active){
+                link.setAttribute("aria-current", "true");
+                // on narrow screens the menu scrolls sideways; keep the active item visible
+                const box = link.parentElement;
+                const left = link.offsetLeft - (box.clientWidth - link.offsetWidth) / 2;
+                box.scrollTo({ left:Math.max(0, left), behavior:"smooth" });
+            }else{
+                link.removeAttribute("aria-current");
+            }
+        });
+    }
+
+    setHeaderOffset();
+    markCurrent();
+    window.addEventListener("scroll", function(){ setHeaderOffset(); markCurrent(); }, { passive:true });
+    window.addEventListener("resize", function(){ setHeaderOffset(); markCurrent(); });
+})();
+
+
 /* ---------- Mobile menu ---------- */
 (function(){
     const toggle = document.querySelector(".menu-toggle");
