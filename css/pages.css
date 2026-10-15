@@ -229,57 +229,13 @@
 .home-story-card--experience .pg-story-list li{ border-bottom-color:var(--rev-line); }
 
 /* ---------- Work With Me: the five areas as magazine "chapters" ----------
-   A slim area menu stays pinned under the header (js/site.js keeps it
-   below the header and marks the area in view). Each area opens with a
-   wide photo banner, then description / list / best-suited card. */
+   Each area opens with a wide photo banner, then description / list /
+   best-suited card. */
 .pg-chapters{ position:relative; }
-.pg-chnav{
-    position:sticky;
-    top:var(--hdr,136px);
-    z-index:50;
-    padding:0 clamp(20px,4vw,62px);
-    border-bottom:1px solid var(--rev-line);
-    background:var(--rev-paper-light);
-}
-.pg-chnav-inner{
-    display:flex;
-    gap:clamp(22px,3vw,40px);
-    max-width:1240px;
-    margin:0 auto;
-    overflow-x:auto;
-    scrollbar-width:none;
-}
-.pg-chnav-inner::-webkit-scrollbar{ display:none; }
-.pg-chnav-link{
-    display:flex;
-    flex:none;
-    align-items:baseline;
-    gap:10px;
-    padding:20px 0 17px;
-    border-bottom:2px solid transparent;
-    color:var(--rev-muted) !important;
-    font-family:"Satoshi","Manrope",Arial,sans-serif;
-    font-size:15px;
-    font-weight:600 !important;
-    text-decoration:none;
-    white-space:nowrap;
-    transition:color .25s ease,border-color .25s ease;
-}
-.pg-chnav-link span{
-    color:#B4874A;
-    font-family:"Fraunces",Georgia,serif;
-    font-size:16px;
-}
-.pg-chnav-link:hover{ color:var(--rev-navy-deep) !important; }
-.pg-chnav-link.is-active{
-    border-bottom-color:#B4874A;
-    color:var(--rev-navy-deep) !important;
-}
-
 .pg-ch{
     padding:clamp(56px,6vw,80px) clamp(20px,4vw,62px) clamp(84px,9vw,120px);
     background:var(--rev-paper-light);
-    scroll-margin-top:calc(var(--hdr,136px) + 66px);
+    scroll-margin-top:96px;
 }
 .pg-ch--sand{ background:#F3EEE8; }
 .pg-ch-inner{
@@ -427,7 +383,6 @@
     .pg-ch-text{ grid-column:1 / -1; }
 }
 @media (max-width:700px){
-    .pg-chnav-link{ padding:16px 0 13px; font-size:14px; }
     .pg-ch-open{ min-height:clamp(300px,82vw,380px); }
     .pg-ch-body{ grid-template-columns:1fr; }
 }
